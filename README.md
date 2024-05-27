@@ -202,7 +202,7 @@ GROUP BY
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1PYSDctjVI5yi-bKImuUajYKEK5tMdXPPSpUhCctYKIQ/edit#gid=2078028245)
 
 ![image5.2](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.2.png | width=240)
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.2.png" width="100">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.2.png" width="680">
 
 ## 5.3. Dataset limitation <a class="anchor"  id="section_5_3"></a>
 
