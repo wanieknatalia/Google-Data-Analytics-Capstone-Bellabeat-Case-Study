@@ -201,7 +201,6 @@ GROUP BY
 
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1PYSDctjVI5yi-bKImuUajYKEK5tMdXPPSpUhCctYKIQ/edit#gid=2078028245)
 
-![image5.2](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.2.png | width=240)
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.2.png" width="680">
 
 ## 5.3. Dataset limitation <a class="anchor"  id="section_5_3"></a>
@@ -226,7 +225,7 @@ ORDER BY
 
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1Oi12jVLxii0K7UFibSOqMjv_qtqBwpjJkjnwHSC1DZ8/edit#gid=1951952335)
 
-![image5.3.1.1](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.3.1.1.png | width=240)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.3.1.1.png" width="680">
 
 Based on [the outlier calculator](https://miniwebtool.com/outlier-calculator/), I determined that in the given
 set, the data for 4 users with ID numbers:
@@ -280,7 +279,7 @@ ORDER BY
 
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1hQWTAlcF7wV5Amxb4-tjGk-1kNb4R7LHI_TXZkpw0-8/edit#gid=1524401156)
 
-![image5.3.1.2](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.3.1.2.png  | width=240)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.3.1.2.png" width="680">
 
 ```sql
 SELECT
@@ -296,7 +295,8 @@ ORDER BY
 
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1RNx0erCNZCuq07f2pSllFGGP26of8fBicbIH4fn7RSE/edit#gid=2052657021)
 
-![image5.3.1.3](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.3.1.3.png  | width=240)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.3.1.3.png" width="680">
+
 ### 5.3.2. Date limitation <a class="anchor"  id="section_5_3_2"></a>
 
 Due to the limitations in the number of users actively using the tracker, I decided to check whether such limitations
