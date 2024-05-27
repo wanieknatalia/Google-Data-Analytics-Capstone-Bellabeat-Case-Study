@@ -1,6 +1,6 @@
 <span style="color:DarkSalmon;font-weight:bold;"> <span style="font-size:44px;">Bellabeat case study</span>
 
-![image24.png](https://drive.google.com/file/d/1V7JJQRIPfaBQgdCfHJtB18LzgMbJ0x0s/view?usp=sharing)
+![image1]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image1.png))
 ---
 # Table of contents
 * [1. About a company](#chapter1)
