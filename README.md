@@ -384,6 +384,7 @@ ORDER BY
   ```
 
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1ol1f3GqgtuwLOa30_JISmvFwWV41AORdYOo-k6znLTE/edit#gid=1253737775)
+
 ### 5.3.3. Creating new tables <a class="anchor"  id="section_5_3_3"></a>
 
 As the data had already been properly cleaned, I relied on data limited to 29 users and 26 days for further analysis.
@@ -520,7 +521,8 @@ GROUP BY
 ```
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1m8hIy5EiTDk3SHF2Ho5FOFC5FvBcgrdjptliUZHqLO4/edit#gid=1474543129)
 
-[link to graph](https://drive.google.com/file/d/1E7FWCKOdhpSJ8IiUb8a7iu1544D4NCLS/view?usp=sharing)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.4.png" width="680">
+
 ## 5.5. User categories by daily activity <a class="anchor"  id="section_5_5"></a>
 
 
@@ -578,7 +580,8 @@ GROUP BY
 ```
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1v35bgsQk6GnhbnnmD87SZpA3XwrXZlQWQfBop9LzwYk/edit#gid=1098343546)
 
-[link to graph](https://drive.google.com/file/d/1xYfT87YO3g4PQmTnHc1HG9SzuEQrQfMT/view?usp=sharing)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.5.1.png" width="680">
+
 ### 5.5.2. User categories by losing weight probability <a class="anchor"  id="section_5_5_2"></a>
 
 According to [Cleveland Clinic's article](https://health.clevelandclinic.org/calories-burned-in-a-day/), over the course of a day, people's natural calorie burn without any activity can range from 1300 to more than 2000, depending on their age and sex.
@@ -612,7 +615,7 @@ GROUP BY
 ```
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1HU_dMwWuGkFbRBRQeU0bpsQO1bIc4tYzA8A8CHU-ilo/edit?usp=sharing)
 
-[link to graph](https://drive.google.com/file/d/1PrI2UymJ0KJ1_uwCtMjLQPmK3CueB6uJ/view?usp=sharing)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.5.2.png" width="680">
 
 ### 5.5.3. User categories by active minutes <a class="anchor"  id="section_5_5_3"></a>
 
@@ -636,7 +639,8 @@ GROUP BY
 ```
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1c-EFv9K935v6LxHmCSj8mFBXb8mYOapqOp3cB_uSS6E/edit?usp=sharing)
 
-[link to graph](https://drive.google.com/file/d/1sdsSAmYOoZeBBeE8ZmvgePstX5YJmSii/view?usp=sharing)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.5.3.png" width="680">
+
 ## 5.6. Average activity <a class="anchor"  id="section_5_6"></a>
 
 Based on the average amount of very active, fairly active, lightly active and sedentary minutes I checked what type of activity prevails in the research group during the day. More than 80% of the time during the day was spent sedentary.
@@ -652,7 +656,7 @@ FROM
 ```
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/11dSdVqsq9ebP1z-VVHoePBsMSu9QaTuoWgucJos_F3w/edit?usp=sharing)
 
-[link to graph](https://drive.google.com/file/d/1ACYF-KWOOH586VSs87JAFISP9dyVNBV4/view?usp=sharing)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.6.png" width="680">
 
 ### 5.6.1. Average activity per day of the week <a class="anchor"  id="section_5_6_1"></a>
 
@@ -689,13 +693,11 @@ GROUP BY
 ```
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/15gum6c3nw2on7Z92Dx3Ysmx6FglUsSR_vNqqpGqzMMc/edit?usp=sharing)
 
-[link to graph](https://drive.google.com/file/d/1bgQRZIMsKXHYChZ1KLuhlSEhbsK0UaLG/view?usp=sharing)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.6.1.1.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.6.1.2.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.6.1.3.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.6.1.4.png" width="680">
 
-[link to graph](https://drive.google.com/file/d/1jXob9kFbOm1b8uGu1Pe6ozpal-hbqeLF/view?usp=sharing)
-
-[link to graph](https://drive.google.com/file/d/1FJMwwRdUdh2u6qmlJARagCgZsGbwXTHY/view?usp=sharing)
-
-[link to graph](https://drive.google.com/file/d/1GIQ7ehH4SK4vylOcb1H2DU0gm7K1QwDz/view?usp=sharing)
 ## 5.7. Average total steps per day of the week <a class="anchor"  id="section_5_7"></a>
 
 I checked how the average number of steps performed by all users of the application was distributed during the week. It turned out that the most active day in terms of the number of steps taken was Tuesday and the least active - Sunday.
@@ -726,7 +728,8 @@ GROUP BY
 ```
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1S-aZr_QGl3BRXBO_B48mvBYeRgAM6oam1milAyFUWsQ/edit?usp=sharing)
 
-[lik to graph](https://drive.google.com/file/d/17oH9TVWKg95MM1e6MKA68wUTRzDIuT-T/view?usp=sharing)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.7.png" width="680">
+
 ## 5.8. FitBit Hourly Activity goal <a class="anchor"  id="section_5_8"></a>
 
 The data that was the source of data for the analysis in question was collected by the FitBit tracker. One of the functionalities of this device is to remind you to take at least 250 steps per hour within 9 hours (standard from 9:00 to 17:00, 7 days a week). I decided to check in what percentage each of the users managed to complete this challenge during the month of measurements. Interestingly, among the users there were both those who completed the study with a score of 100% and those who achieved a score of 0%. The average for the whole group was 72,83%.
@@ -753,7 +756,8 @@ GROUP BY
 ```
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1bVeFpuGH3Al_FYPib8ogfOPTh9g1Tuj2lJmQtDTOyL4/edit?usp=sharing)
 
-[link to graph](https://drive.google.com/file/d/1qIZYhJTzhoBOcTDlqhz1yiPE324XrkYJ/view?usp=sharing)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.8.png" width="680">
+
 ## 5.9. Total steps, intensity and calories by hour <a class="anchor"  id="section_5_9"></a>
 
 In order to examine the average number of steps depending on the hour, I analyzed the file `hourlySteps_merged_limited`. 18:00 was the time with the highest number of steps taken. This is probably due to the ability to devote more time to activity after work. At 11:00 and 15:00 there was a noticeable decrease in the number of steps taken on the activity curve.
@@ -769,7 +773,7 @@ GROUP BY
 ```
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/12DGwP7IY-_Bcp4i4QY-aOqdmN486Wv1sPMfCOu-VEtY/edit?usp=sharing)
 
-[Link to graph](https://drive.google.com/file/d/1z6njyO_-UJl816PjbXvRmXtv04EtemI3/view?usp=sharing)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.9.1.png" width="680">
 
 In the case of the average intensity during the day, similar to the average number of steps taken, the lowest recorded value was at 3:00 and the highest at 18:00, with drops at 11:00 and 15:00. The same results were obtained for the average number of calories burned per day.
 
@@ -784,7 +788,7 @@ GROUP BY
 ```
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1RYyc_FkxFAedZCIQ8KdkRdfxGjRHhEvctPmxfVdjASY/edit?usp=sharing)
 
-[link to graph](https://drive.google.com/file/d/1dfiizVaBKD0QIARCxCXKwv1-fSPVQd0e/view?usp=sharing)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.9.2.png" width="680">
 
 ```sql
 SELECT
@@ -797,7 +801,7 @@ GROUP BY
 ```
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1260p9zz53s3788I6alYT1C4J9X_bX4s0dBO6CkrSsGE/edit?usp=sharing)
 
-[link to graph](https://drive.google.com/file/d/1F5gOYcAHyAH8xuBYQeNcVFP5JGIrBuHA/view?usp=sharing)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.9.3.png" width="680">
 
 ### 5.9.1 Relationship between total steps, intensities and calories <a class="anchor"  id="section_5_9_1"></a>
 
@@ -819,7 +823,7 @@ GROUP BY
 ```
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/12n1PYpznDz583EOne7H9ce9TQw5TFKuCX-YMqXGp1K8/edit?usp=sharing)
 
-[link to graph](https://drive.google.com/file/d/1Q-VsiKQaFUEHgFAIlowC5LQb-WN6b0-S/view?usp=sharing)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.9.1.1.png" width="680">
 
 ```sql
 SELECT
@@ -837,7 +841,7 @@ GROUP BY
 ```
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/16861lnIfpiu3OPSZQzb_QF7c67z_ILKoOK_EwS_Xi0c/edit?usp=sharing)
 
-[link to graph](https://drive.google.com/file/d/1IM4frDdg0vndeeEKKC1SGGP5pYZlddwK/view?usp=sharing)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.9.1.2.png" width="680">
 
 ```sql
 SELECT
@@ -855,7 +859,8 @@ GROUP BY
 ```
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1uPpVAEXvXgkcsbOdPrPsYmE9L6a6ke9VncsoFsN4-h0/edit?usp=sharing)
 
-[link to graph](https://drive.google.com/file/d/1ZkteSrUHFCLQF3eAVTqQFQ5Yp68qOr-U/view?usp=sharing)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.9.1.3.png" width="680">
+
 ## 5.10. Sleeping time <a class="anchor"  id="section_5_10"></a>
 
 Another aspect analyzed were the values from the `sleepDay_merged` file.
@@ -884,11 +889,10 @@ FROM
 GROUP BY
   Id
 ```
-[link to graph](https://drive.google.com/file/d/1AogsHSa33Vs1m3aEjgCwEDVwIEoiX9tu/view?usp=sharing)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.10.1.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.10.2.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.10.3.png" width="680">
 
-[link to graph](https://drive.google.com/file/d/1pdQ-SU2jWgwRDQwCMpjTqTlM1q6JZ3vp/view?usp=sharing)
-
-[link to graph](https://drive.google.com/file/d/1hUrTXHOX4fIP_FnBR4N0_EHLQsYDLUNs/view?usp=sharing)
 ### 5.10.1. Sleep per day of the week <a class="anchor"  id="section_5_10_1"></a>
 
 An analysis of the sleep of study participants in terms of days of the week showed that they slept the least hours on Thursdays and the most on Sundays. At the same time, Sunday was the day when the greatest difference between the time of actual sleep and the time spent in bed was noticeable and the ratio of these two values was the least favorable. This may mean that on that day it was important for the participants to take advantage of the moment of relaxation after the working week and to postpone larger activities for other days of the week. In turn, it was on Thursdays that users fell asleep the fastest. The ratio of sleep time to time spent in bed was the most favorable on Wednesdays. Unfortunately, the average total sleep hours for the entire period did not exceed 7 hours.
@@ -922,11 +926,10 @@ GROUP BY
 ```
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1EWGC8fY1gEJDLJMNH1UJm3_ITpJA_rVGNfV3GHlGv2o/edit?usp=sharing)
 
-[link to graph](https://drive.google.com/file/d/1mXCNsaOS3wsz05n5CLXPhFS_yJMjBcQG/view?usp=sharing)
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.10.1.1.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.10.1.2.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.10.1.3.png" width="680">
 
-[link to graph](https://drive.google.com/file/d/1UiBR_B1mJF9sH7-FBWJt3hSKpgUjglcs/view?usp=sharing)
-
-[link to graph](https://drive.google.com/file/d/19l5JfYGe51bMQas9wDzUiG5RKh8ykspP/view?usp=sharing)
 # 6. Act phase <a class="anchor"  id="chapter6"></a>
 ## 6.1. Conclusions & recommendations <a class="anchor"  id="section_6_1"></a>
 
