@@ -1,4 +1,4 @@
-## $\textcolor{#E9967A}{Bellabeat\ case\ study}$
+# $\textcolor{#E9967A}{Bellabeat\ case\ study}$
 
 ![image1](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image1.png)
 ---
