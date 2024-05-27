@@ -1,6 +1,5 @@
 ## $\textcolor{#E9967A}{Bellabeat\ case\ study}$
-<span style="color:DarkSalmon;font-weight:bold;"> <span style="font-size:44px;">Bellabeat case study</span>
-
+## $\colorbox{#E9967A}{{\color{white}{Bellabeat\ case\ study}}}$
 ![image1](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image1.png)
 ---
 # Table of contents
