@@ -201,7 +201,7 @@ GROUP BY
 
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1PYSDctjVI5yi-bKImuUajYKEK5tMdXPPSpUhCctYKIQ/edit#gid=2078028245)
 
-[link to graph](https://drive.google.com/file/d/1hTHMnAQC4EnXK0A0SvBouij6B-k66zth/view?usp=sharing)
+![image5.2](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.2.png | width=240)
 
 ## 5.3. Dataset limitation <a class="anchor"  id="section_5_3"></a>
 
@@ -225,7 +225,7 @@ ORDER BY
 
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1Oi12jVLxii0K7UFibSOqMjv_qtqBwpjJkjnwHSC1DZ8/edit#gid=1951952335)
 
-[link to graph](https://drive.google.com/file/d/1MPnE4N6W4RdjV1A0d4Ux3MyEHdkjP2ER/view?usp=sharing)
+![image5.3.1.1](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.3.1.1.png | width=240)
 
 Based on [the outlier calculator](https://miniwebtool.com/outlier-calculator/), I determined that in the given
 set, the data for 4 users with ID numbers:
@@ -233,38 +233,6 @@ set, the data for 4 users with ID numbers:
 * 3372868164,
 * 4057192912 and
 * 8253242879  
-
-differ from the other results.
-
-Then I checked whether in the case of the other analyzed files there are also users with fewer measurements during the
-month.
-
-In the case of datasets in files `hourlyCalories_merged`, `hourlyIntensities_merged` and `hourlySteps_merged `the results were
-identical, while the dataset in file `sleepDay_merged` was too dispersed to identify any outliers. I did not exclude the
-data of users using the tracker for less than 26 days (as in other files) for fear of too small statistical sample.
-
-```sql
-SELECT
-  Id,
-  COUNT (DISTINCT ActivityDate) AS NumberOfActiveDays
-FROM
-  `nw-capstone-project-bellabeat.bellabeat_data.dailyActivity_merged_0`
-GROUP BY
-  Id
-ORDER BY
-  NumberOfActiveDays DESC
-```
-
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1Oi12jVLxii0K7UFibSOqMjv_qtqBwpjJkjnwHSC1DZ8/edit#gid=1951952335)
-
-[link to graph](https://drive.google.com/file/d/1MPnE4N6W4RdjV1A0d4Ux3MyEHdkjP2ER/view?usp=sharing)
-
-Based on [the outlier calculator](https://miniwebtool.com/outlier-calculator/), I determined that in the given
-set, the data for 4 users with ID numbers:
-* 2347167796,
-* 3372868164,
-* 4057192912 and
-* 8253242879
 
 differ from the other results.
 
@@ -311,7 +279,7 @@ ORDER BY
 
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1hQWTAlcF7wV5Amxb4-tjGk-1kNb4R7LHI_TXZkpw0-8/edit#gid=1524401156)
 
-[link to graph](https://drive.google.com/file/d/1xE6oS8fxtVCu3JqzA6-iH6b1ekoxAWBy/view?usp=sharing)
+![image5.3.1.2](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.3.1.2.png  | width=240)
 
 ```sql
 SELECT
@@ -327,7 +295,7 @@ ORDER BY
 
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1RNx0erCNZCuq07f2pSllFGGP26of8fBicbIH4fn7RSE/edit#gid=2052657021)
 
-[link to graph](https://drive.google.com/file/d/1qi73Cxzhca-RKcPZ6qSxDlPngkOK8-0l/view?usp=sharing)
+![image5.3.1.3](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.3.1.3.png  | width=240)
 ### 5.3.2. Date limitation <a class="anchor"  id="section_5_3_2"></a>
 
 Due to the limitations in the number of users actively using the tracker, I decided to check whether such limitations
