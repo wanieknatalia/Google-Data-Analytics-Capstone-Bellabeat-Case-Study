@@ -1,5 +1,7 @@
 ## $\textcolor{#E9967A}{Bellabeat\ case\ study}$
-## $\colorbox{#E9967A}{{\color{white}{Bellabeat\ case\ study}}}$
+<span style="color: green"> Some green text </span>
+<font color="green"> Some green text </font>
+
 ![image1](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image1.png)
 ---
 # Table of contents
