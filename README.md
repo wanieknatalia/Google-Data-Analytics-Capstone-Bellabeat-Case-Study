@@ -1,8 +1,10 @@
 # $\textcolor{#E9967A}{Bellabeat\ case\ study}$
 
-![image1](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image1.png)
+![image1](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image1.png)
 ---
+
 # Table of contents
+
 * [1. About a company](#chapter1)
 * [2. Ask phase](#chapter2)
     * [2.1. Business task](#section_2_1)
@@ -38,7 +40,7 @@
         * [5.10.1. Sleep per day of the week](#section_5_10_1)
 * [6. Act phase](#chapter6)
     * [6.1. Conclusions & recommendations](#section_6_1)
-  
+
 # 1. About a company <a class="anchor"  id="chapter1"></a>
 
 Bellabeat is a high-tech manufacturer of health-focused products for women. According to the information on the
@@ -137,19 +139,22 @@ I chose following datasets for the analysis:
 * hourlyCalories_merged
 * dailyActivity_merged
 
-I dropped heartrate_seconds_merged and weightLogInfo_merged files from analysis because of lack of credibility of the data (non-representative sample of data, small number of measurements). I considered the remaining files to be too detailed and irrelevant for this analysis.
+I dropped heartrate_seconds_merged and weightLogInfo_merged files from analysis because of lack of credibility of the
+data (non-representative sample of data, small number of measurements). I considered the remaining files to be too
+detailed and irrelevant for this analysis.
 
 ## 4.3. Cleaning process <a class="anchor"  id="section_4_3"></a>
 
-I verified the data using data cleaning tools and formulas in Google Sheets. I’ve noticed that data and time formats are not consistent in most files.
-During cleaning process I’ve made following steps in each dataset:
+I verified the data using data cleaning tools and formulas in Google Sheets. I’ve noticed that data and time formats are
+not consistent in most files. During cleaning process I’ve made following steps in each dataset:
 
 * Formatting date data into YYYY-MM-DD date format.
 * Formatting time data into 00:00:00 format for consistency.
 * Sorting data by Id and date.
 * Searching for unique users (24 in sleepDay_merged file, 33 in the remaining files) and dates (31 days,
   12.04-12.05.2016) within the dataset.
-* Checking for duplicate data using conditional formatting - I found and removed 3 rows of duplicate information within the sleepDay_merged file.
+* Checking for duplicate data using conditional formatting - I found and removed 3 rows of duplicate information within
+  the sleepDay_merged file.
 * Formatting all numerical data into number format with either no decimals or up to 2 decimals.
 * Separating date and hour into two columns when needed for later analysis.
 
@@ -157,8 +162,8 @@ During cleaning process I’ve made following steps in each dataset:
 
 ## 5.1. SQL dataset upload <a class="anchor"  id="section_5_1"></a>
 
-In BigQuery, I created a project called `nw-capstone-project-bellabeat` and uploaded the `bellabeat_data` dataset containing
-the cleared tables into it.
+In BigQuery, I created a project called `nw-capstone-project-bellabeat` and uploaded the `bellabeat_data` dataset
+containing the cleared tables into it.
 
 ## 5.2. Device wearing frequency <a class="anchor"  id="section_5_2"></a>
 
@@ -201,7 +206,7 @@ GROUP BY
 
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1PYSDctjVI5yi-bKImuUajYKEK5tMdXPPSpUhCctYKIQ/edit#gid=2078028245)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.2.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.2.png" width="680">
 
 ## 5.3. Dataset limitation <a class="anchor"  id="section_5_3"></a>
 
@@ -225,23 +230,25 @@ ORDER BY
 
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1Oi12jVLxii0K7UFibSOqMjv_qtqBwpjJkjnwHSC1DZ8/edit#gid=1951952335)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.3.1.1.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.3.1.1.png" width="680">
 
 Based on [the outlier calculator](https://miniwebtool.com/outlier-calculator/), I determined that in the given
 set, the data for 4 users with ID numbers:
+
 * 2347167796,
 * 3372868164,
 * 4057192912 and
-* 8253242879  
+* 8253242879
 
 differ from the other results.
 
 Then I checked whether in the case of the other analyzed files there are also users with fewer measurements during the
 month.
 
-In the case of datasets in files `hourlyCalories_merged`, `hourlyIntensities_merged` and `hourlySteps_merged `the results were
-identical, while the dataset in file `sleepDay_merged` was too dispersed to identify any outliers. I did not exclude the
-data of users using the tracker for less than 26 days (as in other files) for fear of too small statistical sample.
+In the case of datasets in files `hourlyCalories_merged`, `hourlyIntensities_merged` and `hourlySteps_merged `the
+results were identical, while the dataset in file `sleepDay_merged` was too dispersed to identify any outliers. I did
+not exclude the data of users using the tracker for less than 26 days (as in other files) for fear of too small
+statistical sample.
 
 ```sql
 SELECT
@@ -254,6 +261,7 @@ GROUP BY
 ORDER BY
   NumberOfActiveDays DESC
   ```
+
 ```sql
 SELECT
   Id,
@@ -265,6 +273,7 @@ GROUP BY
 ORDER BY
   NumberOfActiveDays DESC
   ```
+
   ```sql
 SELECT
   Id,
@@ -279,7 +288,7 @@ ORDER BY
 
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1hQWTAlcF7wV5Amxb4-tjGk-1kNb4R7LHI_TXZkpw0-8/edit#gid=1524401156)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.3.1.2.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.3.1.2.png" width="680">
 
 ```sql
 SELECT
@@ -295,15 +304,15 @@ ORDER BY
 
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1RNx0erCNZCuq07f2pSllFGGP26of8fBicbIH4fn7RSE/edit#gid=2052657021)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.3.1.3.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.3.1.3.png" width="680">
 
 ### 5.3.2. Date limitation <a class="anchor"  id="section_5_3_2"></a>
 
 Due to the limitations in the number of users actively using the tracker, I decided to check whether such limitations
 also apply to the period of using the device. So I created queries already on limited sets, excluding inactive users. In
-the case of files `dailyActivity_merged`, `hourlyCalories_merged`, `hourlyIntensities_merged` and `hourlySteps_merged`, again
-using the outlier calculator mentioned above, I noted the dates when the number of users is insufficient to obtain a
-reliable analysis result. It was the last 5 days of measurements, i.e. from 08.05.2016 to 12.05.2016.
+the case of files `dailyActivity_merged`, `hourlyCalories_merged`, `hourlyIntensities_merged` and `hourlySteps_merged`,
+again using the outlier calculator mentioned above, I noted the dates when the number of users is insufficient to obtain
+a reliable analysis result. It was the last 5 days of measurements, i.e. from 08.05.2016 to 12.05.2016.
 
 ```sql
 SELECT
@@ -324,7 +333,7 @@ GROUP BY
 
 For files `hourlyCalories_merged`, `hourlyIntensities_merged` and `hourlySteps_merged` the query result was identical.
 
-  ```sql
+```sql
 SELECT
   ActivityDay,
   COUNT(DISTINCT Id) AS NumberOfUsers
@@ -337,8 +346,9 @@ WHERE
     8253242879)
 GROUP BY
   ActivityDay
-  ```
-  ```sql
+```
+
+```sql
 SELECT
   ActivityDay,
   COUNT(DISTINCT Id) AS NumberOfUsers
@@ -351,8 +361,9 @@ WHERE
     8253242879)
 GROUP BY
   ActivityDay
-  ```
-  ```sql
+```
+
+```sql
 SELECT
   ActivityDay,
   COUNT(DISTINCT Id) AS NumberOfUsers
@@ -365,7 +376,8 @@ WHERE
     8253242879)
 GROUP BY
   ActivityDay
-  ``` 
+``` 
+
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1zEWUjfpgv-dB6IJkIzDGKdNAp9GFGUPJfjBKHfljLUg/edit#gid=9946290)
 
 In the query for the dataset `sleepDay_merged`, all users were considered and, once again, due to the dispersed
@@ -381,7 +393,7 @@ GROUP BY
   SleepDay
 ORDER BY
   SleepDay
-  ```
+```
 
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1ol1f3GqgtuwLOa30_JISmvFwWV41AORdYOo-k6znLTE/edit#gid=1253737775)
 
@@ -409,6 +421,7 @@ CREATE TABLE
       "2016-05-11",
       "2016-05-12") )
 ```
+
 ```sql
 CREATE TABLE
   bellabeat_data.hourlySteps_merged_limited AS (
@@ -427,6 +440,7 @@ CREATE TABLE
       "2016-05-11",
       "2016-05-12") ) 
 ```
+
 ```sql
 CREATE TABLE
   bellabeat_data.hourlyIntensities_merged_limited AS (
@@ -445,6 +459,7 @@ CREATE TABLE
       "2016-05-11",
       "2016-05-12") )
 ```
+
  ```sql
 CREATE TABLE
   bellabeat_data.hourlyCalories_merged_limited AS (
@@ -466,11 +481,10 @@ CREATE TABLE
 
 ## 5.4. Device usage time <a class="anchor"  id="section_5_4"></a>
 
-
 Next I focused on the final analysis of the data. I started with the table `dailyActivity_merged_limited`.
 
-I checked the number of logins and users in the new configuration. The result is 29 users measuring for 26 days - no other configurations were recorded.
-
+I checked the number of logins and users in the new configuration. The result is 29 users measuring for 26 days - no
+other configurations were recorded.
 
 ```sql
 SELECT
@@ -489,11 +503,13 @@ GROUP BY
 ORDER BY
   UserTab.NumberOfLogins DESC
 ```
+
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1Jvv0XMZxj0hFGYoE9Agpr71LHrtZ_mv6utJXVauBHNo/edit#gid=1517514131)
 
-
-I also checked what percentage of users wore the tracker during the day. Of the active users of the application, there was almost a 50/50 split between users wearing the tracker over more than 90% of the time during the day and those wearing it more than 50% of the time during the day. In the study group there were no people whose average time of using the device was less than half of the day.
-
+I also checked what percentage of users wore the tracker during the day. Of the active users of the application, there
+was almost a 50/50 split between users wearing the tracker over more than 90% of the time during the day and those
+wearing it more than 50% of the time during the day. In the study group there were no people whose average time of using
+the device was less than half of the day.
 
 ```sql
 SELECT
@@ -519,14 +535,17 @@ FROM (
 GROUP BY
   TotalWearingPercentage.Id
 ```
+
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1m8hIy5EiTDk3SHF2Ho5FOFC5FvBcgrdjptliUZHqLO4/edit#gid=1474543129)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.4.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.4.png" width="680">
 
 ## 5.5. User categories by daily activity <a class="anchor"  id="section_5_5"></a>
 
+The average number of steps taken during the day for the whole group was 7770,76, the average distance was 5,60 units (
+there was no information about the entity in the source data or in the description of the data set) and the average
+number of calories burned was 2371,85.
 
-The average number of steps taken during the day for the whole group was 7770,76, the average distance was 5,60 units (there was no information about the entity in the source data or in the description of the data set) and the average number of calories burned was 2371,85.
 ```sql
 SELECT
   ROUND(AVG(TotalSteps),2) AS AverageSteps,
@@ -535,13 +554,19 @@ SELECT
 FROM
   `nw-capstone-project-bellabeat.bellabeat_data.dailyActivity_merged_limited`
 ```
+
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1Jl9O9rWtWCUlPUrmvxNZAjlzRoVakrnBt6wfjkG_DcA/edit#gid=1634983438)
 
 ### 5.5.1. User categories by total steps <a class="anchor"  id="section_5_5_1"></a>
 
-In an article ["How Many Steps a Day Is Considered Active?"](https://www.medicinenet.com/how_many_steps_a_day_is_considered_active/article.htm) Pallavi Suyog Uttekar, MD pointed out that according to studies people who walk anywhere between 7500 to 10000 steps per day can improve blood sugar levels, lower blood pressure and help improve symptoms of depression and anxiety. With the result 7770,76 the study group as a whole met the above-described recommendations.
+In an
+article ["How Many Steps a Day Is Considered Active?"](https://www.medicinenet.com/how_many_steps_a_day_is_considered_active/article.htm)
+Pallavi Suyog Uttekar, MD pointed out that according to studies people who walk anywhere between 7500 and 10000 steps
+per day can improve blood sugar levels, lower blood pressure and help improve symptoms of depression and anxiety. With
+the result 7770,76 the study group as a whole met the above-described recommendations.
 
-The author of the article made also the following classification of daily activity in terms of steps taken during the day:
+The author of the article made also the following classification of daily activity in terms of steps taken during the
+day:
 
 * Sedentary: Less than 5000 steps daily
 * Low active: About 5000 to 7499 steps daily
@@ -549,9 +574,11 @@ The author of the article made also the following classification of daily activi
 * Active: More than 10000 steps daily
 * Highly active: More than 12500 steps daily
 
-I checked the average number of steps taken by each of the study participants. I used the above classification to check how many users fall into each activity category.
+I checked the average number of steps taken by each of the study participants. I used the above classification to check
+how many users fall into each activity category.
 
-It turned out that the largest number are sedentary users, low active users and somehow active users. Much less are more active users.
+It turned out that the largest number are sedentary users, low active users and somehow active users. Much less are more
+active users.
 
 ```sql
 SELECT
@@ -578,16 +605,20 @@ FROM (
 GROUP BY
   UserTab.UserCategory
 ```
+
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1v35bgsQk6GnhbnnmD87SZpA3XwrXZlQWQfBop9LzwYk/edit#gid=1098343546)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.5.1.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.5.1.png" width="680">
 
 ### 5.5.2. User categories by losing weight probability <a class="anchor"  id="section_5_5_2"></a>
 
-According to [Cleveland Clinic's article](https://health.clevelandclinic.org/calories-burned-in-a-day/), over the course of a day, people's natural calorie burn without any activity can range from 1300 to more than 2000, depending on their age and sex.
+According to [Cleveland Clinic's article](https://health.clevelandclinic.org/calories-burned-in-a-day/), over the course
+of a day, people's natural calorie burn without any activity can range from 1300 to more than 2000, depending on their
+age and sex.
 
-Assuming that it needs to burn at least 2000 calories a day to lose weight effectively, 72,41% of participants on average per day exceeded this threshold during the study period. With the result 2371,85 the study group met the above-described recommendations.
-
+Assuming that it needs to burn at least 2000 calories a day to lose weight effectively, 72,41% of participants on
+average per day exceeded this threshold during the study period. With the result 2371,85 the study group met the
+above-described recommendations.
 
 ```sql
 SELECT
@@ -613,15 +644,21 @@ FROM (
 GROUP BY
   ProbabilityTab.LosingWeightProbability
 ```
+
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1HU_dMwWuGkFbRBRQeU0bpsQO1bIc4tYzA8A8CHU-ilo/edit?usp=sharing)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.5.2.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.5.2.png" width="680">
 
 ### 5.5.3. User categories by active minutes <a class="anchor"  id="section_5_5_3"></a>
 
-According to [CDC recommendations](https://www.cdc.gov/physicalactivity/basics/adults/index.htm), each week adults need 150 minutes of moderate-intensity physical activity or 75 minutes a week of vigorous-intensity activity or an equivalent combination to gain more health benefits.
+According to [CDC recommendations](https://www.cdc.gov/physicalactivity/basics/adults/index.htm), each week adults need
+150 minutes of moderate-intensity physical activity or 75 minutes a week of vigorous-intensity activity or an equivalent
+combination to gain more health benefits.
 
-In connection with the above, I determined whether the participants of the study met the given criteria. For this purpose, I checked whether the sum of very active minutes and fairly active minutes for each user during the week is greater than 150 or whether very active minutes alone is greater than 75. It turns out that the majority of people participating in the study (58,6%) are able to maintain a weekly activity at an appropriate level.
+In connection with the above, I determined whether the participants of the study met the given criteria. For this
+purpose, I checked whether the sum of very active minutes and fairly active minutes for each user during the week is
+greater than 150 or whether very active minutes alone is greater than 75. It turns out that the majority of people
+participating in the study (58,6%) are able to maintain a weekly activity at an appropriate level.
 
 ```sql
 SELECT
@@ -637,13 +674,15 @@ FROM
 GROUP BY
   Id
 ```
+
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1c-EFv9K935v6LxHmCSj8mFBXb8mYOapqOp3cB_uSS6E/edit?usp=sharing)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.5.3.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.5.3.png" width="680">
 
 ## 5.6. Average activity <a class="anchor"  id="section_5_6"></a>
 
-Based on the average amount of very active, fairly active, lightly active and sedentary minutes I checked what type of activity prevails in the research group during the day. More than 80% of the time during the day was spent sedentary.
+Based on the average amount of very active, fairly active, lightly active and sedentary minutes I checked what type of
+activity prevails in the research group during the day. More than 80% of the time during the day was spent sedentary.
 
 ```sql
 SELECT
@@ -654,15 +693,19 @@ SELECT
 FROM
   `nw-capstone-project-bellabeat.bellabeat_data.dailyActivity_merged_limited`
 ```
+
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/11dSdVqsq9ebP1z-VVHoePBsMSu9QaTuoWgucJos_F3w/edit?usp=sharing)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.6.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.6.png" width="680">
 
 ### 5.6.1. Average activity per day of the week <a class="anchor"  id="section_5_6_1"></a>
 
-I also decided to check how this activity is distributed during the week. Participants spent the most hours in a sitting position on Mondays and the least - on Saturdays.
+I also decided to check how this activity is distributed during the week. Participants spent the most hours in a sitting
+position on Mondays and the least - on Saturdays.
 
-Interestingly, Mondays were also the days of the highest activity with a high level of intensity. I assume there is a tendency to start intensive, ambitious training at the beginning of the week and lose motivation to continue exercising in the following days.
+Interestingly, Mondays were also the days of the highest activity with a high level of intensity. I assume there is a
+tendency to start intensive, ambitious training at the beginning of the week and lose motivation to continue exercising
+in the following days.
 
 ```sql
 SELECT
@@ -691,16 +734,18 @@ FROM
 GROUP BY
   DayOfWeek
 ```
+
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/15gum6c3nw2on7Z92Dx3Ysmx6FglUsSR_vNqqpGqzMMc/edit?usp=sharing)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.6.1.1.png" width="680">
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.6.1.2.png" width="680">
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.6.1.3.png" width="680">
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.6.1.4.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.6.1.1.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.6.1.2.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.6.1.3.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.6.1.4.png" width="680">
 
 ## 5.7. Average total steps per day of the week <a class="anchor"  id="section_5_7"></a>
 
-I checked how the average number of steps performed by all users of the application was distributed during the week. It turned out that the most active day in terms of the number of steps taken was Tuesday and the least active - Sunday.
+I checked how the average number of steps performed by all users of the application was distributed during the week. It
+turned out that the most active day in terms of the number of steps taken was Tuesday and the least active - Sunday.
 
 ```sql
 SELECT
@@ -726,13 +771,18 @@ FROM
 GROUP BY
   DayOfWeek
 ```
+
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1S-aZr_QGl3BRXBO_B48mvBYeRgAM6oam1milAyFUWsQ/edit?usp=sharing)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.7.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.7.png" width="680">
 
 ## 5.8. FitBit Hourly Activity goal <a class="anchor"  id="section_5_8"></a>
 
-The data that was the source of data for the analysis in question was collected by the FitBit tracker. One of the functionalities of this device is to remind you to take at least 250 steps per hour within 9 hours (standard from 9:00 to 17:00, 7 days a week). I decided to check in what percentage each of the users managed to complete this challenge during the month of measurements. Interestingly, among the users there were both those who completed the study with a score of 100% and those who achieved a score of 0%. The average for the whole group was 72,83%.
+The data that was the source of data for the analysis in question was collected by the FitBit tracker. One of the
+functionalities of this device is to remind you to take at least 250 steps per hour within 9 hours (standard from 9:00
+to 17:00, 7 days a week). I decided to check in what percentage each of the users managed to complete this challenge
+during the month of measurements. Interestingly, among the users there were both those who completed the study with a
+score of 100% and those who achieved a score of 0%. The average for the whole group was 72,83%.
 
 ```sql
 SELECT
@@ -754,13 +804,17 @@ FROM (
 GROUP BY
   Id
 ```
+
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1bVeFpuGH3Al_FYPib8ogfOPTh9g1Tuj2lJmQtDTOyL4/edit?usp=sharing)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.8.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.8.png" width="680">
 
 ## 5.9. Total steps, intensity and calories by hour <a class="anchor"  id="section_5_9"></a>
 
-In order to examine the average number of steps depending on the hour, I analyzed the file `hourlySteps_merged_limited`. 18:00 was the time with the highest number of steps taken. This is probably due to the ability to devote more time to activity after work. At 11:00 and 15:00 there was a noticeable decrease in the number of steps taken on the activity curve.
+In order to examine the average number of steps depending on the hour, I analyzed the file `hourlySteps_merged_limited`.
+18:00 was the time with the highest number of steps taken. This is probably due to the ability to devote more time to
+activity after work. At 11:00 and 15:00 there was a noticeable decrease in the number of steps taken on the activity
+curve.
 
 ```sql
 SELECT
@@ -771,11 +825,14 @@ FROM
 GROUP BY
   ActivityHour
 ```
+
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/12DGwP7IY-_Bcp4i4QY-aOqdmN486Wv1sPMfCOu-VEtY/edit?usp=sharing)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.9.1.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.9.1.png" width="680">
 
-In the case of the average intensity during the day, similar to the average number of steps taken, the lowest recorded value was at 3:00 and the highest at 18:00, with drops at 11:00 and 15:00. The same results were obtained for the average number of calories burned per day.
+In the case of the average intensity during the day, similar to the average number of steps taken, the lowest recorded
+value was at 3:00 and the highest at 18:00, with drops at 11:00 and 15:00. The same results were obtained for the
+average number of calories burned per day.
 
 ```sql
 SELECT
@@ -786,9 +843,10 @@ FROM
 GROUP BY
   ActivityHour
 ```
+
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1RYyc_FkxFAedZCIQ8KdkRdfxGjRHhEvctPmxfVdjASY/edit?usp=sharing)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.9.2.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.9.2.png" width="680">
 
 ```sql
 SELECT
@@ -799,13 +857,15 @@ FROM
 GROUP BY
   ActivityHour
 ```
+
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1260p9zz53s3788I6alYT1C4J9X_bX4s0dBO6CkrSsGE/edit?usp=sharing)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.9.3.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.9.3.png" width="680">
 
 ### 5.9.1 Relationship between total steps, intensities and calories <a class="anchor"  id="section_5_9_1"></a>
 
-Above results confirm the quite obvious close correlation between intensity, number of steps and calories burned. However, in order to visually present the above thesis, I additionally compared all these values with each other.
+Above results confirm the quite obvious close correlation between intensity, number of steps and calories burned.
+However, in order to visually present the above thesis, I additionally compared all these values with each other.
 
 ```sql
 SELECT
@@ -821,9 +881,10 @@ ON
 GROUP BY
   CaloriesTab.ActivityHour
 ```
+
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/12n1PYpznDz583EOne7H9ce9TQw5TFKuCX-YMqXGp1K8/edit?usp=sharing)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.9.1.1.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.9.1.1.png" width="680">
 
 ```sql
 SELECT
@@ -839,9 +900,10 @@ ON
 GROUP BY
   CaloriesTab.ActivityHour
 ```
+
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/16861lnIfpiu3OPSZQzb_QF7c67z_ILKoOK_EwS_Xi0c/edit?usp=sharing)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.9.1.2.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.9.1.2.png" width="680">
 
 ```sql
 SELECT
@@ -857,19 +919,26 @@ ON
 GROUP BY
   StepsTab.ActivityHour
 ```
+
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1uPpVAEXvXgkcsbOdPrPsYmE9L6a6ke9VncsoFsN4-h0/edit?usp=sharing)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.9.1.3.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.9.1.3.png" width="680">
 
 ## 5.10. Sleeping time <a class="anchor"  id="section_5_10"></a>
 
 Another aspect analyzed were the values from the `sleepDay_merged` file.
 
-For each user, I calculated the average time spent sleeping and the average time spent in bed and then calculated the ratio of the two values. The average for all tracker users was 91,20, which means that most of them had no problems falling asleep.
+For each user, I calculated the average time spent sleeping and the average time spent in bed and then calculated the
+ratio of the two values. The average for all tracker users was 91,20, which means that most of them had no problems
+falling asleep.
 
-Due to the dispersed quantitative nature of the data in the first graph, I marked in red the columns for which up to 10 measurements were made during the period under review. However, when visually comparing the time asleep to time in bed ratio to the number of measurements, I noticed that the distribution of data in the case of a small number of measurements and a larger number of measurements is similar.
+Due to the dispersed quantitative nature of the data in the first graph, I marked in red the columns for which up to 10
+measurements were made during the period under review. However, when visually comparing the time asleep to time in bed
+ratio to the number of measurements, I noticed that the distribution of data in the case of a small number of
+measurements and a larger number of measurements is similar.
 
-The last element was the assessment of the quality of falling asleep. For 83,3% of users, the time asleep to time in bed ratio was over 90.
+The last element was the assessment of the quality of falling asleep. For 83,3% of users, the time asleep to time in bed
+ratio was over 90.
 
 ```sql
 SELECT
@@ -889,13 +958,20 @@ FROM
 GROUP BY
   Id
 ```
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.10.1.png" width="680">
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.10.2.png" width="680">
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.10.3.png" width="680">
+
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.10.1.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.10.2.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.10.3.png" width="680">
 
 ### 5.10.1. Sleep per day of the week <a class="anchor"  id="section_5_10_1"></a>
 
-An analysis of the sleep of study participants in terms of days of the week showed that they slept the least hours on Thursdays and the most on Sundays. At the same time, Sunday was the day when the greatest difference between the time of actual sleep and the time spent in bed was noticeable and the ratio of these two values was the least favorable. This may mean that on that day it was important for the participants to take advantage of the moment of relaxation after the working week and to postpone larger activities for other days of the week. In turn, it was on Thursdays that users fell asleep the fastest. The ratio of sleep time to time spent in bed was the most favorable on Wednesdays. Unfortunately, the average total sleep hours for the entire period did not exceed 7 hours.
+An analysis of the sleep of study participants in terms of days of the week showed that they slept the least hours on
+Thursdays and the most on Sundays. At the same time, Sunday was the day when the greatest difference between the time of
+actual sleep and the time spent in bed was noticeable and the ratio of these two values was the least favorable. This
+may mean that on that day it was important for the participants to take advantage of the moment of relaxation after the
+working week and to postpone larger activities for other days of the week. In turn, it was on Thursdays that users fell
+asleep the fastest. The ratio of sleep time to time spent in bed was the most favorable on Wednesdays. Unfortunately,
+the average total sleep hours for the entire period did not exceed 7 hours.
 
 ```sql
 SELECT
@@ -924,34 +1000,43 @@ FROM
 GROUP BY
   DayOfWeek
 ```
+
 [link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1EWGC8fY1gEJDLJMNH1UJm3_ITpJA_rVGNfV3GHlGv2o/edit?usp=sharing)
 
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.10.1.1.png" width="680">
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.10.1.2.png" width="680">
-<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/image5.10.1.3.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.10.1.1.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.10.1.2.png" width="680">
+<img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.10.1.3.png" width="680">
 
 # 6. Act phase <a class="anchor"  id="chapter6"></a>
+
 ## 6.1. Conclusions & recommendations <a class="anchor"  id="section_6_1"></a>
 
-With the onset of the pandemic, there has been a clear trend towards greater daily use of both health monitoring devices and connected home devices. The trend is particularly strong for smartwatches, fitness bands and voice-assisted speakers.
+With the onset of the pandemic, there has been a clear trend towards greater daily use of both health monitoring devices
+and connected home devices. The trend is particularly strong for smartwatches, fitness bands and voice-assisted
+speakers.
 
-As new products are launched, smart home devices will go from smart to intelligent, with tools giving consumers insight into how the information they are presented with can lead to positive outcomes.
+As new products are launched, smart home devices will go from smart to intelligent, with tools giving consumers insight
+into how the information they are presented with can lead to positive outcomes.
 
-The most common metrics monitored by a smart device, including a smartphone, are: number of steps taken, heart rate, sleep patterns, weight, calorie intake and stress level.
-After analyzing FitBit Fitness Tracker Data, I found some insights that would help influence Bellabeat marketing strategy:
+The most common metrics monitored by a smart device, including a smartphone, are: number of steps taken, heart rate,
+sleep patterns, weight, calorie intake and stress level.
+After analyzing FitBit Fitness Tracker Data, I found some insights that would help influence Bellabeat marketing
+strategy:
 
-| Insight                                                                                                                                                           | Recommendation                                                                                                                                                                                                                                                                                                                                                                                     |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Almost 50% of tracker users took fewer than the recommended 7,500 steps a day.                                                                                    | **Using hourly alerts** for several hours during the day to remind you to take a certain number of steps. As can be seen in the example of the FitBit tracker, alarge part of users managed to achieve 100% of the assumed activity (default 250 steps per hour from 9:00 a.m. to 5:00 p.m.).                                                                                                      |
-| The decrease in activity at 11:00. and 15:00 is probably related to the need to devote oneself to work.                                                           | It is rather difficult to expect that working people will be able to find more time for activity during this period, but even in this case they can be supported by **smart reminders** them of the need **to get up and take a few steps**.                                                                                                                                                      |
-| Most activity happens between 17:00 and 19:00.                                                                                                                    | **Using timeframe to motivate** customers to move to consolidate positive habits.                                                                                                                                                                                                                                                                                                                  |
+| Insight                                                                                                                                                           | Recommendation                                                                                                                                                                                                                                                                                                                                                                                            |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Almost 50% of tracker users took fewer than the recommended 7,500 steps a day.                                                                                    | **Using hourly alerts** for several hours during the day to remind you to take a certain number of steps. As can be seen in the example of the FitBit tracker, alarge part of users managed to achieve 100% of the assumed activity (default 250 steps per hour from 9:00 a.m. to 5:00 p.m.).                                                                                                             |
+| The decrease in activity at 11:00. and 15:00 is probably related to the need to devote oneself to work.                                                           | It is rather difficult to expect that working people will be able to find more time for activity during this period, but even in this case they can be supported by **smart reminders** them of the need **to get up and take a few steps**.                                                                                                                                                              |
+| Most activity happens between 17:00 and 19:00.                                                                                                                    | **Using timeframe to motivate** customers to move to consolidate positive habits.                                                                                                                                                                                                                                                                                                                         |
 | Mondays are the days of the highest activity with a high level of intensity.                                                                                      | Incorrectly selected exercises, too ambitious and of high intensity, usually started at the beginning of a new week, may result in loss of motivation to exercise later in the week. Data collected from Bellabeat products can be analyzed and - through the application - used to **provide appropriate recommendations, e.g. as to the type of exercise** that the user should perform on a given day. |
-| More than 40% of people do not meet the recommendations regarding the weekly activity norm.                                                                       | The collected data should encourage more activity by **rewarding the user with praise** (e.g. badges for taking a certain number of steps so far) and **suggesting daily, weekly or monthly challenges** to the user.                                                                                                                                                                              |
-| Sunday is the day when tracker users have the most time to relax and wind down before going to sleep. Despite this, the actual sleep time did not exceed 8 hours. | **Setting a reminder**, based on observed sleep habits, **to wind down and prepare for sleep** to improve sleep duration and quality. The app could also offer useful materials to help customers fall asleep - e.g. meditation sessions, sleep techniques, relaxation music playlists.|
+| More than 40% of people do not meet the recommendations regarding the weekly activity norm.                                                                       | The collected data should encourage more activity by **rewarding the user with praise** (e.g. badges for taking a certain number of steps so far) and **suggesting daily, weekly or monthly challenges** to the user.                                                                                                                                                                                     |
+| Sunday is the day when tracker users have the most time to relax and wind down before going to sleep. Despite this, the actual sleep time did not exceed 8 hours. | **Setting a reminder**, based on observed sleep habits, **to wind down and prepare for sleep** to improve sleep duration and quality. The app could also offer useful materials to help customers fall asleep - e.g. meditation sessions, sleep techniques, relaxation music playlists.                                                                                                                   |
 
 Additional suggestions:
-* The application could also systematically display interesting facts and tips regarding healthy eating and lifestyle, which would also help improve sleep quality and fitness.
-* In the event of an alarming health condition of the user, the system should suggest consulting a doctor and in the absence of reaction from the user - contact the previously indicated family member or hospital.
-* The products could connect to other devices in the smart home, e.g. with a TV or speakers and also offer solutions such as the location of items such as keys or a telephone.
 
-
+* The application could also systematically display interesting facts and tips regarding healthy eating and lifestyle,
+  which would also help improve sleep quality and fitness.
+* In the event of an alarming health condition of the user, the system should suggest consulting a doctor and in the
+  absence of reaction from the user - contact the previously indicated family member or hospital.
+* The products could connect to other devices in the smart home, e.g. with a TV or speakers and also offer solutions
+  such as the location of items such as keys or a telephone.
