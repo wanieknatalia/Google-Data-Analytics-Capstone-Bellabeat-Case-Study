@@ -1,4 +1,4 @@
-<span style="color:#e9967a;">Bellabeat case study</span>
+<h1 style="color:#e9967a;">Bellabeat case study</h1>
 
 ![image1](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image1.png)
 ---
