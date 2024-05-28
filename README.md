@@ -1,4 +1,4 @@
-# $\textcolor{#E9967A}{Bellabeat\ case\ study}$
+<span style="color:#e9967a;">Bellabeat case study</span>
 
 ![image1](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image1.png)
 ---
