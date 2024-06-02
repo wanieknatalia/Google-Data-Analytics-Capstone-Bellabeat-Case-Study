@@ -958,6 +958,7 @@ FROM
 GROUP BY
   Id
 ```
+[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1xv5J-B_3lGMP4-qA4eya3c0iKcNGaxjHSCV_hgncpg4/edit#gid=2005924800)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.10.1.png" width="680">
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.10.2.png" width="680">
