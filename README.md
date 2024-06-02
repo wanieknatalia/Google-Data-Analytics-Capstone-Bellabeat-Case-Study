@@ -204,7 +204,7 @@ GROUP BY
   UsersTab.TrackerUserType
 ```
 
-[link to results in Google Sheets](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.2.xlsx))
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.2.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.2.png" width="680">
 
@@ -228,7 +228,7 @@ ORDER BY
   NumberOfActiveDays DESC
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1Oi12jVLxii0K7UFibSOqMjv_qtqBwpjJkjnwHSC1DZ8/edit#gid=1951952335)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.3.1.1.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.3.1.1.png" width="680">
 
@@ -286,7 +286,7 @@ ORDER BY
   NumberOfActiveDays DESC
   ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1hQWTAlcF7wV5Amxb4-tjGk-1kNb4R7LHI_TXZkpw0-8/edit#gid=1524401156)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.3.1.2.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.3.1.2.png" width="680">
 
@@ -302,7 +302,7 @@ ORDER BY
   NumberOfActiveDays DESC
 ```
 
-[link to results in Google Sheets](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.3.1.3.xlsx))
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.3.1.3.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.3.1.3.png" width="680">
 
@@ -329,7 +329,7 @@ GROUP BY
   ActivityDate
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1VcFYvAlaMDdwsx20ivlAUqrIjckFbI2Ez4bhAqzodm4/edit#gid=1455037645)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.3.2.1.xlsx)
 
 For files `hourlyCalories_merged`, `hourlyIntensities_merged` and `hourlySteps_merged` the query result was identical.
 
@@ -378,7 +378,7 @@ GROUP BY
   ActivityDay
 ``` 
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1zEWUjfpgv-dB6IJkIzDGKdNAp9GFGUPJfjBKHfljLUg/edit#gid=9946290)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.3.2.2.xlsx)
 
 In the query for the dataset `sleepDay_merged`, all users were considered and, once again, due to the dispersed
 measurement values, it was not possible to identify outliers.
@@ -395,7 +395,7 @@ ORDER BY
   SleepDay
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1ol1f3GqgtuwLOa30_JISmvFwWV41AORdYOo-k6znLTE/edit#gid=1253737775)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.3.2.3.xlsx)
 
 ### 5.3.3. Creating new tables <a class="anchor"  id="section_5_3_3"></a>
 
@@ -504,7 +504,7 @@ ORDER BY
   UserTab.NumberOfLogins DESC
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1Jvv0XMZxj0hFGYoE9Agpr71LHrtZ_mv6utJXVauBHNo/edit#gid=1517514131)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.4.1.xlsx)
 
 I also checked what percentage of users wore the tracker during the day. Of the active users of the application, there
 was almost a 50/50 split between users wearing the tracker over more than 90% of the time during the day and those
@@ -536,7 +536,7 @@ GROUP BY
   TotalWearingPercentage.Id
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1m8hIy5EiTDk3SHF2Ho5FOFC5FvBcgrdjptliUZHqLO4/edit#gid=1474543129)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.4.2.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.4.png" width="680">
 
@@ -555,7 +555,7 @@ FROM
   `nw-capstone-project-bellabeat.bellabeat_data.dailyActivity_merged_limited`
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1Jl9O9rWtWCUlPUrmvxNZAjlzRoVakrnBt6wfjkG_DcA/edit#gid=1634983438)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.5.xlsx)
 
 ### 5.5.1. User categories by total steps <a class="anchor"  id="section_5_5_1"></a>
 
@@ -606,7 +606,7 @@ GROUP BY
   UserTab.UserCategory
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1v35bgsQk6GnhbnnmD87SZpA3XwrXZlQWQfBop9LzwYk/edit#gid=1098343546)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.5.1.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.5.1.png" width="680">
 
@@ -645,7 +645,7 @@ GROUP BY
   ProbabilityTab.LosingWeightProbability
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1HU_dMwWuGkFbRBRQeU0bpsQO1bIc4tYzA8A8CHU-ilo/edit?usp=sharing)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.5.2.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.5.2.png" width="680">
 
@@ -675,7 +675,7 @@ GROUP BY
   Id
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1c-EFv9K935v6LxHmCSj8mFBXb8mYOapqOp3cB_uSS6E/edit?usp=sharing)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.5.3.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.5.3.png" width="680">
 
@@ -694,7 +694,7 @@ FROM
   `nw-capstone-project-bellabeat.bellabeat_data.dailyActivity_merged_limited`
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/11dSdVqsq9ebP1z-VVHoePBsMSu9QaTuoWgucJos_F3w/edit?usp=sharing)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.6.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.6.png" width="680">
 
@@ -735,7 +735,7 @@ GROUP BY
   DayOfWeek
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/15gum6c3nw2on7Z92Dx3Ysmx6FglUsSR_vNqqpGqzMMc/edit?usp=sharing)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.6.1.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.6.1.1.png" width="680">
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.6.1.2.png" width="680">
@@ -772,7 +772,7 @@ GROUP BY
   DayOfWeek
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1S-aZr_QGl3BRXBO_B48mvBYeRgAM6oam1milAyFUWsQ/edit?usp=sharing)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.7.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.7.png" width="680">
 
@@ -805,7 +805,7 @@ GROUP BY
   Id
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1bVeFpuGH3Al_FYPib8ogfOPTh9g1Tuj2lJmQtDTOyL4/edit?usp=sharing)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.8.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.8.png" width="680">
 
@@ -826,7 +826,7 @@ GROUP BY
   ActivityHour
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/12DGwP7IY-_Bcp4i4QY-aOqdmN486Wv1sPMfCOu-VEtY/edit?usp=sharing)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.9.1.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.9.1.png" width="680">
 
@@ -844,7 +844,7 @@ GROUP BY
   ActivityHour
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1RYyc_FkxFAedZCIQ8KdkRdfxGjRHhEvctPmxfVdjASY/edit?usp=sharing)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.9.2.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.9.2.png" width="680">
 
@@ -858,7 +858,7 @@ GROUP BY
   ActivityHour
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1260p9zz53s3788I6alYT1C4J9X_bX4s0dBO6CkrSsGE/edit?usp=sharing)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.9.3.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.9.3.png" width="680">
 
@@ -882,7 +882,7 @@ GROUP BY
   CaloriesTab.ActivityHour
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/12n1PYpznDz583EOne7H9ce9TQw5TFKuCX-YMqXGp1K8/edit?usp=sharing)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.9.1.1.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.9.1.1.png" width="680">
 
@@ -901,7 +901,7 @@ GROUP BY
   CaloriesTab.ActivityHour
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/16861lnIfpiu3OPSZQzb_QF7c67z_ILKoOK_EwS_Xi0c/edit?usp=sharing)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.9.1.2.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.9.1.2.png" width="680">
 
@@ -920,7 +920,7 @@ GROUP BY
   StepsTab.ActivityHour
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1uPpVAEXvXgkcsbOdPrPsYmE9L6a6ke9VncsoFsN4-h0/edit?usp=sharing)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.9.1.3.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.9.1.3.png" width="680">
 
@@ -958,7 +958,7 @@ FROM
 GROUP BY
   Id
 ```
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1xv5J-B_3lGMP4-qA4eya3c0iKcNGaxjHSCV_hgncpg4/edit#gid=2005924800)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.10.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.10.1.png" width="680">
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.10.2.png" width="680">
@@ -1002,7 +1002,7 @@ GROUP BY
   DayOfWeek
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1EWGC8fY1gEJDLJMNH1UJm3_ITpJA_rVGNfV3GHlGv2o/edit?usp=sharing)
+[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.10.1.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.10.1.1.png" width="680">
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.10.1.2.png" width="680">
