@@ -204,7 +204,7 @@ GROUP BY
   UsersTab.TrackerUserType
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1PYSDctjVI5yi-bKImuUajYKEK5tMdXPPSpUhCctYKIQ/edit#gid=2078028245)
+[link to results in Google Sheets](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.2.xlsx))
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.2.png" width="680">
 
@@ -302,7 +302,7 @@ ORDER BY
   NumberOfActiveDays DESC
 ```
 
-[link to results in Google Sheets](https://docs.google.com/spreadsheets/d/1RNx0erCNZCuq07f2pSllFGGP26of8fBicbIH4fn7RSE/edit#gid=2052657021)
+[link to results in Google Sheets](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.3.1.3.xlsx))
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.3.1.3.png" width="680">
 
