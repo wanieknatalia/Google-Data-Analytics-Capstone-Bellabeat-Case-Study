@@ -204,7 +204,11 @@ GROUP BY
   UsersTab.TrackerUserType
 ```
 
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.2.xlsx)
+| TrackerUserType | PercentageOfUsers  |
+|-----------------|--------------------|
+| Regular         | 87.88              |
+| Moderate        | 09.09              |
+| Episodic        | 03.03              |
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.2.png" width="680">
 
@@ -504,7 +508,9 @@ ORDER BY
   UserTab.NumberOfLogins DESC
 ```
 
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.4.1.xlsx)
+|NumberOfLogins	| NumberOfUsersLogged |
+|-----|---------------------|
+|  26| 29                  |
 
 I also checked what percentage of users wore the tracker during the day. Of the active users of the application, there
 was almost a 50/50 split between users wearing the tracker over more than 90% of the time during the day and those
@@ -555,7 +561,9 @@ FROM
   `nw-capstone-project-bellabeat.bellabeat_data.dailyActivity_merged_limited`
 ```
 
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.5.xlsx)
+|   AverageSteps  |  AverageTotalDistance   |  AverageCalories   |
+|-----|-----|-----|
+|  7770,76   |  5,60   |  2371,85   |
 
 ### 5.5.1. User categories by total steps <a class="anchor"  id="section_5_5_1"></a>
 
@@ -606,7 +614,13 @@ GROUP BY
   UserTab.UserCategory
 ```
 
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.5.1.xlsx)
+|   UserCategory  | NumberOfUsers |
+|-----|---------------|
+|  Highly Active User   | 3 |
+|   Low Active User  | 7 |
+|   Sedentary User  | 7 |
+|  Active User   | 5 |
+|   Somewhat Active User  | 7 
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.5.1.png" width="680">
 
@@ -645,7 +659,10 @@ GROUP BY
   ProbabilityTab.LosingWeightProbability
 ```
 
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.5.2.xlsx)
+|   LosingWeightProbability  |    PercentOfUsers |
+|-----|-----|
+|   Weight loss less likely  |   0.27586206896551724  |
+|   Weight loss more likely  |   0.72413793103448276  |
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.5.2.png" width="680">
 
@@ -694,7 +711,9 @@ FROM
   `nw-capstone-project-bellabeat.bellabeat_data.dailyActivity_merged_limited`
 ```
 
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.6.xlsx)
+|   AvgOfVeryActiveMinutes  | AvgOfFairlyActiveMinutes    |   AvgOfLightlyActiveMinutes  | AvgOfSedentaryMinutes    |
+|-----|-----|-----|-----|
+|   22.242705570291765  |   13.602122015915125  | 193.52652519893905    |   1003.0835543766563  |
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.6.png" width="680">
 
@@ -772,7 +791,15 @@ GROUP BY
   DayOfWeek
 ```
 
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.7.xlsx)
+|  DayOfWeek   | AvgTotalStepsByWeekDay    |
+|-----|-----|
+|   Sunday  |  6856.64367816092   |
+|  Tuesday   |    8288.948275862067 |
+|    Thursday |  8167.6551724137935   |
+|  Saturday   |   8049.4396551724158  |
+|  Wednesday   |  7477.9310344827554   |
+|    Friday |   7620.6637931034466  |
+|  Monday   |  7683.7241379310371   |
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.7.png" width="680">
 
