@@ -231,6 +231,24 @@ GROUP BY
 ORDER BY
   NumberOfActiveDays DESC
 ```
+<style>
+    .heatMap {
+        width: 70%;
+        text-align: center;
+    }
+    .heatMap th {
+        background: grey;
+        word-wrap: break-word;
+        text-align: center;
+    }
+    .heatMap tr:nth-child(31) { background: red; }
+    .heatMap tr:nth-child(32) { background: red; }
+    .heatMap tr:nth-child(33) { background: red; }
+    .heatMap tr:nth-child(34) { background: red; }
+</style>
+
+<div class="heatMap">
+   
 | Id	| NumberOfActiveDays|
 |-----|------|
 |1503960366|	31|
@@ -266,6 +284,8 @@ ORDER BY
 |8253242879	|19|
 |2347167796	|18|
 |4057192912|	4|
+
+</div>
 
 [link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.3.1.1.xlsx)
 
