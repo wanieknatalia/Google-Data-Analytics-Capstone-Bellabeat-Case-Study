@@ -231,24 +231,6 @@ GROUP BY
 ORDER BY
   NumberOfActiveDays DESC
 ```
-<style>
-    .heatMap {
-        width: 70%;
-        text-align: center;
-    }
-    .heatMap th {
-        background: grey;
-        word-wrap: break-word;
-        text-align: center;
-    }
-    .heatMap tr:nth-child(31) { background: red; }
-    .heatMap tr:nth-child(32) { background: red; }
-    .heatMap tr:nth-child(33) { background: red; }
-    .heatMap tr:nth-child(34) { background: red; }
-</style>
-
-<div class="heatMap">
-   
 | Id	| NumberOfActiveDays|
 |-----|------|
 |1503960366|	31|
@@ -284,10 +266,6 @@ ORDER BY
 |8253242879	|19|
 |2347167796	|18|
 |4057192912|	4|
-
-</div>
-
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.3.1.1.xlsx)
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.3.1.1.png" width="680">
 
@@ -344,8 +322,41 @@ GROUP BY
 ORDER BY
   NumberOfActiveDays DESC
   ```
-
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.3.1.2.xlsx)
+|Id	|NumberOfActiveDays|
+|-----|-----|
+|1624580081|	31|
+|1844505072|	31|
+|1927972279|	31|
+|2022484408|	31|
+|2026352035|	31|
+|2320127002|	31|
+|2873212765|	31|
+|4020332650|	31|
+|4319703577|	31|
+|4388161847|	31|
+|4445114986|	31|
+|4558609924|	31|
+|4702921684|	31|
+|5553957443|	31|
+|6962181067|	31|
+|7086361926|	31|
+|8053475328|	31|
+|8378563200|	31|
+|8877689391|	31|
+|1503960366|	30|
+|1644430081|	30|
+|5577150313|	30|
+|8583815059|	30|
+|3977333714|	29|
+|6117666160|	28|
+|6290855005|	28|
+|8792009665|	28|
+|6775888955|	26|
+|7007744171|	26|
+|3372868164|	20|
+|2347167796|	18|
+|8253242879|	18|
+|4057192912|	4|
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.3.1.2.png" width="680">
 
@@ -360,8 +371,32 @@ GROUP BY
 ORDER BY
   NumberOfActiveDays DESC
 ```
-
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.3.1.3.xlsx)
+|Id|	NumberOfActiveDays|
+|----|----|
+|5553957443|	31|
+|6962181067|	31|
+|8378563200|	31|
+|2026352035|	28|
+|3977333714|	28|
+|4445114986|	28|
+|4702921684|	27|
+|4319703577|	26|
+|5577150313|	26|
+|1503960366|	25|
+|7086361926|	24|
+|4388161847|	23|
+|6117666160|	18|
+|2347167796|	15|
+|8792009665|	15|
+|4020332650|	8|
+|1927972279|	5|
+|4558609924|	5|
+|1644430081|	4|
+|1844505072|	3|
+|6775888955|	3|
+|8053475328|	3|
+|7007744171|	2|
+|2320127002|	1|
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.3.1.3.png" width="680">
 
@@ -387,8 +422,39 @@ WHERE
 GROUP BY
   ActivityDate
 ```
-
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.3.2.1.xlsx)
+|ActivityDate|	NumberOfUsers|
+|---|---|
+|2016-04-12|	29|
+|2016-04-13|	29|
+|2016-04-14|	29|
+|2016-04-15|	29|
+|2016-04-16|	29|
+|2016-04-17|	29|
+|2016-04-18|	29|
+|2016-04-19|	29|
+|2016-04-20|	29|
+|2016-04-21|	29|
+|2016-04-22|	29|
+|2016-04-23|	29|
+|2016-04-24|	29|
+|2016-04-25|	29|
+|2016-04-26|	29|
+|2016-04-27|	29|
+|2016-04-28|	29|
+|2016-04-29|	29|
+|2016-04-30|	29|
+|2016-05-01|	29|
+|2016-05-02|	29|
+|2016-05-03|	29|
+|2016-05-04|	29|
+|2016-05-05|	29|
+|2016-05-06|	29|
+|2016-05-07|	29|
+|2016-05-08|	27|
+|2016-05-09|	27|
+|2016-05-10|	26|
+|2016-05-11|	24|
+|2016-05-12|	21|
 
 For files `hourlyCalories_merged`, `hourlyIntensities_merged` and `hourlySteps_merged` the query result was identical.
 
