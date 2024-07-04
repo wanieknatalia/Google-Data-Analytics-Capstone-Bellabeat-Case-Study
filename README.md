@@ -502,8 +502,39 @@ WHERE
 GROUP BY
   ActivityDay
 ``` 
-
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.3.2.2.xlsx)
+|ActivityDay|	NumberOfUsers|
+|----|----|
+|2016-04-12|	29|
+|2016-04-13|	29|
+|2016-04-14|	29|
+|2016-04-15|	29|
+|2016-04-16|	29|
+|2016-04-17|	29|
+|2016-04-18|	29|
+|2016-04-19|	29|
+|2016-04-20|	29|
+|2016-04-21|	29|
+|2016-04-22|	29|
+|2016-04-23|	29|
+|2016-04-24|	29|
+|2016-04-25|	29|
+|2016-04-26|	29|
+|2016-04-27|	29|
+|2016-04-28|	29|
+|2016-04-29|	29|
+|2016-04-30|	29|
+|2016-05-01|	29|
+|2016-05-02|	29|
+|2016-05-03|	29|
+|2016-05-04|	29|
+|2016-05-05|	29|
+|2016-05-06|	29|
+|2016-05-07|	29|
+|2016-05-08|	27|
+|2016-05-09|	27|
+|2016-05-10|	24|
+|2016-05-11|	23|
+|2016-05-12|	19|
 
 In the query for the dataset `sleepDay_merged`, all users were considered and, once again, due to the dispersed
 measurement values, it was not possible to identify outliers.
@@ -519,8 +550,39 @@ GROUP BY
 ORDER BY
   SleepDay
 ```
-
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.3.2.3.xlsx)
+|SleepDay|	NumberOfUsers|
+|----|----|
+|2016-04-12|	13|
+|2016-04-13|	14|
+|2016-04-14|	13|
+|2016-04-15|	17|
+|2016-04-16|	14|
+|2016-04-17|	12|
+|2016-04-18|	10|
+|2016-04-19|	14|
+|2016-04-20|	15|
+|2016-04-21|	15|
+|2016-04-22|	13|
+|2016-04-23|	15|
+|2016-04-24|	13|
+|2016-04-25|	12|
+|2016-04-26|	14|
+|2016-04-27|	14|
+|2016-04-28|	16|
+|2016-04-29|	15|
+|2016-04-30|	15|
+|2016-05-01|	16|
+|2016-05-02|	13|
+|2016-05-03|	12|
+|2016-05-04|	12|
+|2016-05-05|	12|
+|2016-05-06|	12|
+|2016-05-07|	13|
+|2016-05-08|	14|
+|2016-05-09|	11|
+|2016-05-10|	12|
+|2016-05-11|	11|
+|2016-05-12|	8|
 
 ### 5.3.3. Creating new tables <a class="anchor"  id="section_5_3_3"></a>
 
@@ -662,8 +724,37 @@ FROM (
 GROUP BY
   TotalWearingPercentage.Id
 ```
-
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.4.2.xlsx)
+|Id|	TrackerWearingTime|
+|----|----|
+|1503960366|	More than half a day|
+|1624580081|	Almost all day|
+|1644430081|	Almost all day|
+|1844505072|	Almost all day|
+|1927972279|	Almost all day|
+|2022484408|	Almost all day|
+|2026352035|	More than half a day|
+|2320127002|	Almost all day|
+|2873212765|	Almost all day|
+|3977333714|	More than half a day|
+|4020332650|	Almost all day|
+|4319703577|	More than half a day|
+|4388161847|	More than half a day|
+|4445114986|	More than half a day|
+|4558609924|	Almost all day|
+|4702921684|	More than half a day|
+|5553957443|	More than half a day|
+|5577150313|	More than half a day|
+|6117666160|	More than half a day|
+|6290855005|	Almost all day|
+|6775888955|	Almost all day|
+|6962181067|	More than half a day|
+|7007744171|	Almost all day|
+|7086361926|	More than half a day|
+|8053475328|	Almost all day|
+|8378563200|	More than half a day|
+|8583815059|	Almost all day|
+|8792009665|	More than half a day|
+|8877689391|	Almost all day|
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.4.png" width="680">
 
@@ -812,8 +903,37 @@ FROM
 GROUP BY
   Id
 ```
-
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.5.3.xlsx)
+|Id|	AvgActivity|
+|----|----|
+|1624580081|	Non-active person|
+|1644430081|	Active person|
+|2022484408|	Active person|
+|3977333714|	Active person|
+|4319703577|	Non-active person|
+|4388161847|	Active person|
+|4702921684|	Active person|
+|5577150313|	Active person|
+|6775888955|	Active person|
+|7007744171|	Active person|
+|7086361926|	Active person|
+|8583815059|	Active person|
+|1844505072|	Non-active person|
+|1927972279|	Non-active person|
+|2026352035|	Non-active person|
+|2320127002|	Non-active person|
+|2873212765|	Active person|
+|4020332650|	Non-active person|
+|4445114986|	Non-active person|
+|4558609924|	Non-active person|
+|5553957443|	Active person|
+|6117666160|	Non-active person|
+|6290855005|	Non-active person|
+|6962181067|	Active person|
+|8053475328|	Active person|
+|8378563200|	Active person|
+|8792009665|	Non-active person|
+|8877689391|	Active person|
+|1503960366|	Active person|
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.5.3.png" width="680">
 
@@ -874,8 +994,15 @@ FROM
 GROUP BY
   DayOfWeek
 ```
-
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.6.1.xlsx)
+|DayOfWeek|	AvgSedentaryMinutesByDayOfWeek|	AvgLightlyActiveMinutesByDayOfWeek|	AvgFairlyActiveMinutesByDayOfWeek|	AvgVeryActiveMinutesByDayOfWeek|
+|----|----|----|----|----|
+|Monday|	1046.3|	185.34|	13.31|	23.99|
+|Sunday|	1002.72|	165.83|	14.53|	21.25|
+|Saturday|	955.11|	205.11|	14.61|	21.96|
+|Friday|	1003.22|	205.54|	12.54|	21.53|
+|Tuesday|	1012.47|	196.77|	14.28|	23.72|
+|Thursday|	1008.33|	199.85|	13.39|	22.66|
+|Wednesday|	1004.14|	187.27|	12.72|	20.78|
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.6.1.1.png" width="680">
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.6.1.2.png" width="680">
@@ -952,8 +1079,37 @@ FROM (
 GROUP BY
   Id
 ```
-
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.8.xlsx)
+|Id|	HittingHourlyActivityGoalPercantage|
+|----|----|
+|8053475328|	67|
+|1644430081|	78|
+|4558609924|	100|
+|4319703577|	89|
+|2320127002|	33|
+|1503960366|	100|
+|8877689391|	100|
+|4388161847|	100|
+|6775888955|	11|
+|5553957443|	89|
+|7086361926|	67|
+|2873212765|	100|
+|6290855005|	89|
+|5577150313|	100|
+|4445114986|	44|
+|4020332650|	0|
+|6117666160|	100|
+|8378563200|	100|
+|8583815059|	89|
+|2026352035|	89|
+|7007744171|	100|
+|1927972279|	0|
+|2022484408|	100|
+|8792009665|	0|
+|6962181067|	78|
+|3977333714|	89|
+|4702921684|	100|
+|1844505072|	22|
+|1624580081|	78|
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.8.png" width="680">
 
@@ -973,8 +1129,32 @@ FROM
 GROUP BY
   ActivityHour
 ```
-
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.9.1.xlsx)
+|ActivityHour|	AverageStepTotal|
+|----|----|
+|00:00:00|	47.586206896551687|
+|01:00:00|	26.52589641434265|
+|02:00:00|	17.864541832669303|
+|03:00:00|	7.29216467463479|
+|04:00:00|	13.65869853917663|
+|05:00:00|	46.723771580345293|
+|06:00:00|	191.40504648074406|
+|07:00:00|	302.0916334661357|
+|08:00:00|	430.97211155378494|
+|09:00:00|	453.83798140770233|
+|10:00:00|	464.06648936170217|
+|11:00:00|	423.7978723404259|
+|12:00:00|	541.31250000000011|
+|13:00:00|	519.74601063829709|
+|14:00:00|	531.70877659574467|
+|15:00:00|	407.12765957446862|
+|16:00:00|	496.55585106382972|
+|17:00:00|	548.61037234042578|
+|18:00:00|	591.6941489361709|
+|19:00:00|	587.0545212765951|
+|20:00:00|	350.88696808510656|
+|21:00:00|	294.80585106382927|
+|22:00:00|	250.75531914893597|
+|23:00:00|	119.59308510638313|
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.9.1.png" width="680">
 
@@ -991,8 +1171,32 @@ FROM
 GROUP BY
   ActivityHour
 ```
-
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.9.2.xlsx)
+|ActivityHour|	AverageTotalIntensity|
+|----|----|
+|00:00:00|	2.3408488063660471|
+|01:00:00|	1.5936254980079685|
+|02:00:00|	1.1208499335989377|
+|03:00:00|	0.48207171314741043|
+|04:00:00|	0.66666666666666663|
+|05:00:00|	5.00398406374502|
+|06:00:00|	8.2124833997344|
+|07:00:00|	10.689243027888446|
+|08:00:00|	14.715803452855242|
+|09:00:00|	15.828685258964139|
+|10:00:00|	17.022606382978726|
+|11:00:00|	16.057180851063819|
+|12:00:00|	19.501329787234045|
+|13:00:00|	18.31515957446808|
+|14:00:00|	18.203457446808514|
+|15:00:00|	15.3311170212766|
+|16:00:00|	17.530585106382979|
+|17:00:00|	21.534574468085093|
+|18:00:00|	22.065159574468076|
+|19:00:00|	21.513297872340431|
+|20:00:00|	14.176861702127654|
+|21:00:00|	11.722074468085108|
+|22:00:00|	9.321808510638304|
+|23:00:00|	4.9773936170212778|
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.9.2.png" width="680">
 
@@ -1005,8 +1209,32 @@ FROM
 GROUP BY
   ActivityHour
 ```
-
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.9.3.xlsx)
+|ActivityHour|	AverageCalories|
+|----|----|
+|00:00:00|	73.08222811671088|
+|01:00:00|	71.3014608233731|
+|02:00:00|	70.06241699867202|
+|03:00:00|	68.285524568393058|
+|04:00:00|	69.013280212483423|
+|05:00:00|	82.674634794156617|
+|06:00:00|	88.946879150066479|
+|07:00:00|	95.6533864541833|
+|08:00:00|	104.54581673306771|
+|09:00:00|	108.66799468791498|
+|10:00:00|	110.39893617021286|
+|11:00:00|	108.86835106382971|
+|12:00:00|	118.00664893617028|
+|13:00:00|	115.63031914893612|
+|14:00:00|	115.89228723404261|
+|15:00:00|	107.46941489361699|
+|16:00:00|	114.00930851063835|
+|17:00:00|	123.23803191489367|
+|18:00:00|	125.22473404255314|
+|19:00:00|	122.875|
+|20:00:00|	103.24734042553192|
+|21:00:00|	96.402925531914875|
+|22:00:00|	90.168882978723431|
+|23:00:00|	78.472074468085125|
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.9.3.png" width="680">
 
@@ -1029,8 +1257,32 @@ ON
 GROUP BY
   CaloriesTab.ActivityHour
 ```
-
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.9.1.1.xlsx)
+|ActivityHour|	AverageCalories|	AverageStepTotal|
+|----|----|----|
+|00:00:00|	73.082228116711121|	47.586206896551253|
+|01:00:00|	71.30146082337312|	26.525896414342931|
+|02:00:00|	|70.062416998671608|	17.864541832669296|
+|03:00:00|	68.2855245683965|	7.29216467463477|
+|04:00:00|	69.013280212483778|	13.658698539176626|
+|05:00:00|	82.674634794160653|	46.7237715803428|
+|06:00:00|	88.946879150065314|	191.40504648074338|
+|07:00:00|	95.653386454183675|	302.09163346614292|
+|08:00:00|	104.54581673306998|	430.97211155378636|
+|09:00:00|	108.66799468791518|	453.83798140770807|
+|10:00:00|	110.39893617021325|	464.06648936171848|
+|11:00:00|	108.86835106382946|	423.79787234041817|
+|12:00:00|	118.00664893617123|	541.31249999999613|
+|13:00:00|	115.63031914893264|	519.7460106383|
+|14:00:00|	115.89228723404281|	531.708776595733|
+|15:00:00|	107.46941489361585|	407.12765957447533|
+|16:00:00|	114.00930851063811|	496.555851063828|
+|17:00:00|	123.23803191489303|	548.61037234044272|
+|18:00:00|	125.22473404255433|	591.69414893616806|
+|19:00:00|	122.87500000000284|	587.0545212766217|
+|20:00:00|	103.24734042553101|	350.88696808511196|
+|21:00:00|	96.402925531914576|	294.8058510638316|
+|22:00:00|	90.168882978723545|	250.75531914894074|
+|23:00:00|	78.47207446808379|	119.59308510638031|
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.9.1.1.png" width="680">
 
@@ -1048,8 +1300,32 @@ ON
 GROUP BY
   CaloriesTab.ActivityHour
 ```
-
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.9.1.2.xlsx)
+|ActivityHour|	AverageCalories|	AverageTotalIntensity|
+|----|----|----|
+|00:00:00|	73.082228116710439|	2.3408488063661017|
+|01:00:00|	71.301460823373333|	1.5936254980079474|
+|02:00:00|	70.062416998673683|	1.1208499335989415|
+|03:00:00|	68.285524568393456|	0.48207171314740793|
+|04:00:00|	69.013280212483991|	0.6666666666666583|
+|05:00:00|	82.67463479415629|	5.0039840637450075|
+|06:00:00|	88.9468791500665|	8.2124833997342765|
+|07:00:00|	95.653386454185252|	10.689243027888448|
+|08:00:00|	104.54581673306251|	14.715803452855207|
+|09:00:00|	108.66799468791524|	15.828685258964107|
+|10:00:00|	110.3989361702146|	17.02260638297977|
+|11:00:00|	108.86835106382991|	16.057180851064082|
+|12:00:00|	118.00664893617194|	19.501329787232958|
+|13:00:00|	115.63031914893355|	18.315159574468076|
+|14:00:00|	115.89228723404553|	18.203457446808873|
+|15:00:00|	107.4694148936176|	15.331117021276613|
+|16:00:00|	114.00930851064142|	17.530585106383167|
+|17:00:00|	123.23803191489502|	21.534574468085335|
+|18:00:00|	125.22473404255234|	22.065159574467977|
+|19:00:00|	122.87499999999956|	21.513297872340853|
+|20:00:00|	103.24734042552987|	14.176861702127571|
+|21:00:00|	96.40292553191027|	11.722074468084996|
+|22:00:00|	90.168882978725222|	9.3218085106382542|
+|23:00:00|	78.472074468084216|	4.9773936170213453|
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.9.1.2.png" width="680">
 
@@ -1067,8 +1343,32 @@ ON
 GROUP BY
   StepsTab.ActivityHour
 ```
-
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.9.1.3.xlsx)
+|ActivityHour|	AverageStepTotal|	AverageTotalIntensity|
+|----|----|----|
+|00:00:00|	47.59|	2.34|
+|01:00:00|	26.53|	1.59|
+|02:00:00|	17.86|	1.12|
+|03:00:00|	7.29|	0.48|
+|04:00:00|	13.66|	0.67|
+|05:00:00|	46.72|	5|
+|06:00:00|	191.41|	8.21|
+|07:00:00|	302.09|	10.69|
+|08:00:00|	430.97|	14.72|
+|09:00:00|	453.84|	15.83|
+|10:00:00|	464.07|	17.02|
+|11:00:00|	423.8|	16.06|
+|12:00:00|	541.31|	19.5|
+|13:00:00|	519.75|	18.32|
+|14:00:00|	531.71|	18.2|
+|15:00:00|	407.13|	15.33|
+|16:00:00|	496.56|	17.53|
+|17:00:00|	548.61|	21.53|
+|18:00:00|	591.69|	22.07|
+|19:00:00|	587.05|	21.51|
+|20:00:00|	350.89|	14.18|
+|21:00:00|	294.81|	11.72|
+|22:00:00|	250.76|	9.32|
+|23:00:00|	119.59|	4.98|
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.9.1.3.png" width="680">
 
@@ -1106,7 +1406,32 @@ FROM
 GROUP BY
   Id
 ```
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.10.xlsx)
+|Id|	AverageTotalMinutesAsleep|	AverageTotalTimeInBed|	TimeAsleepToTimeInBedRatio|	FallingAsleepQuality|	NumberOfMeasurements|
+|----|-----|-----|----|----|----|
+|1503960366|	360.27999999999986|	383.20000000000005|	94.02|	Good|	25|
+|1644430081|	294|	346|	84.97|	Poor|	4|
+|1844505072|	652|	961|	67.85|	Poor|	3|
+|1927972279|	417|	437.8|	95.25|	Good|	5|
+|2026352035|	506.17857142857139|	537.64285714285722|	94.15|	Good|	28|
+|2320127002|	61|	69|	88.41|	Poor|	1|
+|2347167796|	446.8|	491.33333333333337|	90.94|	Good|	15|
+|3977333714|	293.64285714285728|	461.14285714285711|	63.68|	Poor|	28|
+|4020332650|	349.375|	379.75|	92|	Good|	8|
+|4319703577|	476.65384615384613|	501.96153846153851|	94.96|	Good|	26|
+|4388161847|	400.17391304347819|	423.21739130434781|	94.56|	Good|	23|
+|4445114986|	385.17857142857144|	416.82142857142861|	92.41|	Good|	28|
+|4558609924|	127.6|	140|	91.14|	Good|	5|
+|4702921684|	417.48148148148152|	438.22222222222217|	95.27|	Good|	27|
+|5553957443|	463.48387096774189|	505.8709677419356|	91.62|	Good|	31|
+|5577150313|	431.99999999999994|	460.61538461538464|	93.79|	Good|	26|
+|6117666160|	478.77777777777777|	510.16666666666669|	93.85|	Good|	18|
+|6775888955|	349.66666666666669|	369|	94.76|	Good|	3|
+|6962181067|	447.99999999999994|	466.12903225806451|	96.11|	Good|	31|
+|7007744171|	68.5|	71.5|	95.8|	Good|	2|
+|7086361926|	453.125|	466.41666666666669|	97.15|	Good|	24|
+|8053475328|	297|	301.66666666666669|	98.45|	Good|	3|
+|8378563200|	445.12903225806457|	485.93548387096774|	91.6|	Good|	31|
+|8792009665|	435.66666666666674|	453.80000000000007|	96|	Good|	15|
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.10.1.png" width="680">
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.10.2.png" width="680">
@@ -1149,8 +1474,15 @@ FROM
 GROUP BY
   DayOfWeek
 ```
-
-[link to results](https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/tables/tab5.10.1.xlsx)
+|DayOfWeek|	AvgTotalHoursAsleepByWeekDay|	AvgTotalTimeInBedByWeekDay|	TimeInBedAndAsleepDifference|	TimeAsleepToTimeInBedRatio|
+|----|----|-----|-----|-----|
+|Tuesday|	6.7423076923076914|	7.3882051282051275|	0.64589743589743609|	91.26|
+|Wednesday|	7.24469696969697|	7.8338383838383816|	0.58914141414141152|	92.48|
+|Friday|	6.7570175438596491|	7.4175438596491245|	0.6605263157894754|	91.1|
+|Saturday|	6.9845029239766072|	7.6640350877192978|	0.67953216374269054|	91.13|
+|Sunday|	7.545757575757575|	8.391818181818179|	0.846060606060604|	89.92|
+|Thursday|	6.6882812499999984|	7.2479166666666641|	0.55963541666666572|	92.28|
+|Monday|	6.9916666666666654|	7.62246376811594|	0.630797101449275|	91.72|
 
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.10.1.1.png" width="680">
 <img src="https://github.com/wanieknatalia/Google-Data-Analytics-Capstone-Bellabeat-Case-Study/blob/main/images/image5.10.1.2.png" width="680">
